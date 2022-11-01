@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Public from './pages/Public';
 import Protected from './pages/Protected';
 import Layout from './pages/Layout';
 import RequireAuth from './components/RequireAuth';
@@ -15,7 +13,6 @@ function App() {
       <Route element={<Layout />}>
         {/* {public routes go here} */}
         <Route path='/' element={<Home />} />
-        <Route path='/public' element={<Public />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
         <Route element={<RequireAuth />}>

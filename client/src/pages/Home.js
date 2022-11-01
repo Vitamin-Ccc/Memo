@@ -7,11 +7,9 @@ const Home = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Welcome to Memo</h1>
+      <p>Please feel free to use this app as your memo</p>
       {JSON.stringify(auth)}
-      <Link to ="/protected">Protected</Link>
-      <Link to ="/public">Public</Link>
-      <p onClick = {()=>navigate('/public')}>navigate to public</p>
     </div>
   )
 }
